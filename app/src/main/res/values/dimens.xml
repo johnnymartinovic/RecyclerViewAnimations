@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="general_toolbar_height">48dp</dimen>
+    <dimen name="general_toolbar_elevation">4dp</dimen>
+    <dimen name="general_item_decoration_margin">4dp</dimen>
+
+    <dimen name="main_activity_button_corner_radius">4dp</dimen>
+
+    <dimen name="travelino_item_height">128dp</dimen>
+    <dimen name="travelino_item_corner_radius">2dp</dimen>
+    <dimen name="travelino_item_elevation">4dp</dimen>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fe7263</color>
+    <color name="colorPrimaryDark">#fe7263</color>
+    <color name="colorAccent">#fe7263</color>
+
+    <color name="general_background_color">#f6f6f6</color>
+    <color name="general_status_bar">#fe7263</color>
+    <color name="general_toolbar">#fe7263</color>
+    <color name="general_toolbar_text">#ffffff</color>
+    <color name="general_light">#ffffff</color>
+    <color name="general_fab">#fe7263</color>
+    <color name="general_ripple">#cecece</color>
+
+    <color name="travelino_text_dark_normal">#444a59</color>
+    <color name="travelino_text_dark_inactive">#999999</color>
+    <color name="travelino_text_info">#ff5252</color>
+</resources>

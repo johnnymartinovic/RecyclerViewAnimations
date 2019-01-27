@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@drawable/travelino_item_background"
+    tools:layout_height="@dimen/travelino_item_height"
+    tools:layout_width="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/rubik_medium"
+        android:maxLines="1"
+        android:textColor="@color/travelino_text_dark_normal"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Explore Zagreb with a Local" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/rubik_medium"
+        android:maxLines="1"
+        android:textColor="@color/travelino_text_dark_normal"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:text="$70" />
+
+    <TextView
+        android:id="@+id/priceSuffix"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/rubik_regular"
+        android:maxLines="1"
+        android:text="@string/travelino_item_price_suffix"
+        android:textColor="@color/travelino_text_dark_normal"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/price"
+        app:layout_constraintLeft_toRightOf="@id/price"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/originalPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/rubik_regular"
+        android:maxLines="1"
+        android:textColor="@color/travelino_text_dark_inactive"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintRight_toLeftOf="@id/discountPercentage"
+        app:layout_constraintTop_toBottomOf="@id/price"
+        tools:text="Was $92" />
+
+    <TextView
+        android:id="@+id/discountPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/rubik_bold"
+        android:maxLines="1"
+        android:textColor="@color/travelino_text_info"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/originalPrice"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="-24%" />
+
+    <TextView
+        android:id="@+id/infoMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/rubik_regular"
+        android:maxLines="1"
+        android:textColor="@color/travelino_text_info"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="Hurry up, Zagreb is great!" />
+
+</merge>
